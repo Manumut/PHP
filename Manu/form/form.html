@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="respuesta.php" method="POST">
+        <label for="nameUsu">nombre de usuario:<br></label>
+        <input name="nameUsu"type="text" placeholder="Nombre de usuario" required>
+        
+        <label for="psw"><br>Contarseña<br></label>
+        <input name="psw"type="password" pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#_\-\.,?])[a-zA-Z0-9@#_\-\.,?]{8,}$" oninvalid="setCustomValidity('La contraseña tienen que ser minimo de 8 caracteres y debe contener:\n - una mayuscula\n - un numero\n - un caracter especial entre @ # _ , ?')" oninput="setCustomValidity('')" placeholder="Contraseña" required>
+
+        <select name="provincia">
+            <option value=0 selected>Selecciona tu provincia</option>
+            <option value=alm>Almuñecar</option>
+            <option value=gra>Granada</option>
+            <option value=mlg>Malaga</option>
+            <option value=cor>Cordoba</option>
+            <option value=jnn>Jaen</option>
+            <option value=hlv>Huelva</option>
+            <option value=sev>Sevilla</option>
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+
+    
+</body>
+</html>
