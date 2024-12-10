@@ -1,0 +1,15 @@
+table {
+    border: solid 2px ;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 4px;
+}
+table tr:nth-child(1) {
+    font-size: larger;
+    font-weight: bolder;
+}
+td {
+    background-color: wheat;
+    border-radius: 25px;
+    padding: 4px;
+}

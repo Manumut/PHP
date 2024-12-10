@@ -1,0 +1,10 @@
+<form action="ejercicio13.php" method="post">
+        <h1>EJERCICIO 14</h1>
+        <div>
+            <div>
+                <label for="num1">Introduce la contraseña:<br></label>
+                <input class="inputDato" type="password" name="password" placeholder="contraseña" required>
+            </div>
+        </div>
+        <input class="inputBtn" type="submit" value="Enviar">
+    </form>
